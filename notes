@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+//pointer is a data type, you can declare a variable of that type
+//to declare it needs to be type* pointer_name
+//int* p;
+//int* p = 0; declare and initialize
+
+//how to make a pointer point to something
+
+//int *p; 
+//int y;
+
+//to access the location of a variable, use the address operator '&'
+//p = &y; //y is of type int and p is the pointer to an int, make p point to y
+//now we say p --> y
+//we can now change y through p 
+//int *p, y;
+//*p = 50; //changing y via p (indirectly change y)
+//*p = *p + 1;
+
+//pointer assignment and pointer arithmetic: Trace the code
+//how can we use pointers to successfully swap the values of two variables
+
