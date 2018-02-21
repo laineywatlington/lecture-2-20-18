@@ -11,9 +11,8 @@ struct Point{
 void printPoint(point p); //forward declaration 
 
 //function that changes the color parameter to black
-void changeColor(Point q, string mycolor){
-  q.color = mycolor;
-  printPoint(q);
+void changeColor(Point* q, string mycolor){ //pass by address
+  q->color = mycolor;
 }
 
 void printPoint(Point p){
@@ -26,6 +25,6 @@ int main(){
   Point p1 = {"red", 100.0, 200.0} //initialize previously declared variables
   p1.color = "black" //dot operator is used to get to the member variable of p1
   printPoint(p1);
-  changeColor(p1, "yellow");
-  //printPoint(p1);
+  changeColor(&p1, "yellow");
+  printPoint(p1);
 }
