@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std
+
+void swap(char* a, char* b){
+  char tmp = *a;
+  *a = *b;
+  *b = tmp;
+}
+
+int main(){
+  char x = 70, y = 67;
+  cout<<"x = "<<x<<"y = "<<y<<endl;
+  swap(&x,&y);
+  cout<<"x = "<<x<<"y = "<<y<<endl;
+  //numbers now interpreted as ascii characters, so those are what will be printed 
+  //this is because x and y have been declared as chars
+}
